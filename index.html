@@ -15,8 +15,8 @@
     <title>Sum of All Fears - Mini Site</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <!-- My Custom CSS Files -->
     <link href="content/custom.css" rel="stylesheet" />
@@ -37,8 +37,8 @@
                     <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
                     <!--<li class="nav-item"><a class="nav-link" href="solve.html">Solve</a></li>
                     <li class="nav-item"><a class="nav-link" href="code.html">My Code</a></li>-->
-                    <li class="nav-item"><a class="nav-link" href="https://github.com/Kengaroo92" target="_blank">GitHub</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.kenanbjelosevic.com/" target="_blank">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="//github.com/Kengaroo92" target="_blank">GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="//www.kenanbjelosevic.com/" target="_blank">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">My Blog</a></li>
                 </ul>
             </div>
@@ -55,6 +55,30 @@
                     <li>The basic challenge of Sum of All Fears is to write a program that uses a hard-coded array of [10, 15, 3, 7] and allows the user to enter a value for K before running the algorithm and return true or false.</li>
                     <li>Technologies Used: HTML, JavaScript, jQuery, CSS, Bootstrap</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sum of All Fears UI-->
+    <div class="container">
+        <div class="row">
+            <div class="col-2"><input type="number" id="userInput1" class="numInput" /></div>
+            <div class="col-2"><input type="number" id="userInput2" class="numInput" /></div>
+            <div class="col-2"><input type="number" id="userInput3" class="numInput" /></div>
+            <div class="col-2"><input type="number" id="userInput4" class="numInput" /></div>
+            <div class="col-2"><input type="number" id="userInput5" class="numInput" /></div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-2"><input type="number" id="userInputK" class="kValue" placeholder="K Value:" /></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <br />
+                <button onclick="sumFears()" class="btn btn-warning" style="width: 25%;">Find the K</button>
+            </div>
+            <div class="col">
+                <span id="output"></span>
             </div>
         </div>
     </div>
